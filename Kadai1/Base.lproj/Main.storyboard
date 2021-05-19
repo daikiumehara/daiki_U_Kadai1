@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Kadai1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fol-N6-jme">
+                                <rect key="frame" x="20" y="64" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2br-xs-Nqq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dN1-Wk-pls">
+                                <rect key="frame" x="20" y="108" width="100" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wu7-qi-BM9">
+                                <rect key="frame" x="20" y="152" width="100" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7dB-ED-lnS">
+                                <rect key="frame" x="20" y="196" width="100" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vu1-u1-Cb4">
+                                <rect key="frame" x="20" y="240" width="100" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wh0-e6-mjp">
+                                <rect key="frame" x="47" y="294" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="calcButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lvH-u7-XWa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMl-zc-CZa">
+                                <rect key="frame" x="20" y="334" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wu7-qi-BM9" firstAttribute="width" secondItem="Fol-N6-jme" secondAttribute="width" id="3q6-hY-JfE"/>
+                            <constraint firstItem="dN1-Wk-pls" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Oo-4a-bwC"/>
+                            <constraint firstItem="KMl-zc-CZa" firstAttribute="top" secondItem="wh0-e6-mjp" secondAttribute="bottom" constant="10" id="JSa-hS-pmF"/>
+                            <constraint firstItem="Fol-N6-jme" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Jd1-tw-hkE"/>
+                            <constraint firstItem="7dB-ED-lnS" firstAttribute="width" secondItem="Fol-N6-jme" secondAttribute="width" id="JqH-c8-lae"/>
+                            <constraint firstItem="7dB-ED-lnS" firstAttribute="top" secondItem="wu7-qi-BM9" secondAttribute="bottom" constant="10" id="Jwm-6i-nNp"/>
+                            <constraint firstItem="KMl-zc-CZa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NTa-cJ-6vI"/>
+                            <constraint firstItem="wu7-qi-BM9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ULO-a2-HK8"/>
+                            <constraint firstItem="vu1-u1-Cb4" firstAttribute="top" secondItem="7dB-ED-lnS" secondAttribute="bottom" constant="10" id="eJa-JN-5ru"/>
+                            <constraint firstItem="vu1-u1-Cb4" firstAttribute="width" secondItem="Fol-N6-jme" secondAttribute="width" id="her-0x-4dI"/>
+                            <constraint firstItem="wh0-e6-mjp" firstAttribute="top" secondItem="vu1-u1-Cb4" secondAttribute="bottom" constant="20" id="jTg-SJ-975"/>
+                            <constraint firstItem="dN1-Wk-pls" firstAttribute="top" secondItem="Fol-N6-jme" secondAttribute="bottom" constant="10" id="jcV-bv-lNf"/>
+                            <constraint firstItem="7dB-ED-lnS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kLV-SI-jyF"/>
+                            <constraint firstItem="dN1-Wk-pls" firstAttribute="width" secondItem="Fol-N6-jme" secondAttribute="width" id="nVU-l3-8br"/>
+                            <constraint firstItem="wu7-qi-BM9" firstAttribute="top" secondItem="dN1-Wk-pls" secondAttribute="bottom" constant="10" id="pKN-zA-ksb"/>
+                            <constraint firstItem="wh0-e6-mjp" firstAttribute="centerX" secondItem="vu1-u1-Cb4" secondAttribute="centerX" id="qzq-4o-u5q"/>
+                            <constraint firstItem="vu1-u1-Cb4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rqO-0Q-zmA"/>
+                            <constraint firstItem="Fol-N6-jme" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="szx-Gt-sdA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="KMl-zc-CZa" id="jKd-q5-HWt"/>
+                        <outlet property="fifthTextField" destination="vu1-u1-Cb4" id="ue9-LJ-9gJ"/>
+                        <outlet property="firstTextField" destination="Fol-N6-jme" id="Hpb-J2-M5t"/>
+                        <outlet property="fourthTextField" destination="7dB-ED-lnS" id="xHC-hX-pmh"/>
+                        <outlet property="secondTextField" destination="dN1-Wk-pls" id="J4u-Ct-CC1"/>
+                        <outlet property="thirdTextField" destination="wu7-qi-BM9" id="0b5-JD-6j2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
