@@ -83,11 +83,11 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="KMl-zc-CZa" id="jKd-q5-HWt"/>
-                        <outlet property="fifthTextField" destination="vu1-u1-Cb4" id="ue9-LJ-9gJ"/>
-                        <outlet property="firstTextField" destination="Fol-N6-jme" id="Hpb-J2-M5t"/>
-                        <outlet property="fourthTextField" destination="7dB-ED-lnS" id="xHC-hX-pmh"/>
-                        <outlet property="secondTextField" destination="dN1-Wk-pls" id="J4u-Ct-CC1"/>
-                        <outlet property="thirdTextField" destination="wu7-qi-BM9" id="0b5-JD-6j2"/>
+                        <outletCollection property="numberTextFields" destination="Fol-N6-jme" collectionClass="NSMutableArray" id="ALB-2J-sp7"/>
+                        <outletCollection property="numberTextFields" destination="dN1-Wk-pls" collectionClass="NSMutableArray" id="ESY-an-4bd"/>
+                        <outletCollection property="numberTextFields" destination="wu7-qi-BM9" collectionClass="NSMutableArray" id="JZ7-7l-qkM"/>
+                        <outletCollection property="numberTextFields" destination="7dB-ED-lnS" collectionClass="NSMutableArray" id="hMv-s1-org"/>
+                        <outletCollection property="numberTextFields" destination="vu1-u1-Cb4" collectionClass="NSMutableArray" id="qkC-EZ-ECu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
